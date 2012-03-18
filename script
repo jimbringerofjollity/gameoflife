@@ -1,0 +1,2 @@
+#!/bin/bash
+./01matrix 23 80 < /dev/urandom | ./gameoflife

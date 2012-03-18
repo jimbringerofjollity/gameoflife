@@ -1,0 +1,31 @@
+README
+
+Conway's Game of Life (Haskell)
+Author: Jim Tao
+
+This program implements Conway's Game of Life.
+It reads a 0-1 matrix from stdin and simulates
+Conway's Game of Life on that initial state,
+interpreting 0's to be dead cells and 1' to
+be alive cells. 
+
+Example usage:
+
+% echo [[0,0,1,0],[1,0,0,1],[1,0,0,1],[0,1,0,0]] | ./gameoflife
+
+Note:
+0-1 matrices can be generated
+by issuing the following command:
+
+% ./01matrix 23 80 < /dev/urandom
+
+Thus the following command executes Conway's Game of Life
+on a randomly generated array:
+
+% ./01matrix 23 80 < /dev/urandom | ./gameoflife
+
+A simple shell script titled script does this very thing.
+To execute it, type in the command
+
+% ./script
+

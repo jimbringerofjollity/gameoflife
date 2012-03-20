@@ -1,2 +1,2 @@
 #!/bin/bash
-./01matrix 36 127 < /dev/urandom | ./gameoflife
+./01matrix 23 80 < /dev/urandom | ./gameoflife

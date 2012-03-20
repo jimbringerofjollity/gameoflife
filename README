@@ -17,12 +17,12 @@ Note:
 0-1 matrices can be generated
 by issuing the following command:
 
-% ./01matrix 36 127 < /dev/urandom
+% ./01matrix 23 80 < /dev/urandom
 
 Thus the following command executes Conway's Game of Life
 on a randomly generated array:
 
-% ./01matrix 36 127 < /dev/urandom | ./gameoflife
+% ./01matrix 23 80 < /dev/urandom | ./gameoflife
 
 A simple shell script titled script does this very thing.
 To execute it, type in the command

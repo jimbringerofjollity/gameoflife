@@ -1,3 +1,5 @@
+import Control.Concurrent
+
 neighbors1d :: Int -> [a] -> [a]
 neighbors1d j a
    | j == 0 = take 2 a
@@ -17,7 +19,7 @@ nextArray :: [[Int]] -> [[Int]]
 nextArray a = [[(nextState i j a) | j <- [0..((length . head) a-1)]] | i <- [0..((length a)-1)]]
 
 clear :: IO ()
-clear = putStr "\ESC[H\ESC[2J"
+clear = sequence_ [threadDelay 10, putStr "\ESC[H\ESC[2J"]
 
 convert :: Int -> Char
 convert n = if n == 0 then '.' else '#'

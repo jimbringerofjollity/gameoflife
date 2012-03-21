@@ -13,6 +13,11 @@ Example usage:
 
 % echo [[0,0,1,0],[1,0,0,1],[1,0,0,1],[0,1,0,0]] | ./gameoflife
 
+Compilation instructions: 
+
+To compile, use the command
+% make all
+
 Note:
 0-1 matrices can be generated
 by issuing the following command:

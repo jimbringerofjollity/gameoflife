@@ -12,6 +12,7 @@ be live cells.
 Example usage:
 
 % echo [[0,0,1,0],[1,0,0,1],[1,0,0,1],[0,1,0,0]] | ./gameoflife
+% ./gameoflife < gun.txt
 
 Compilation instructions: 
 
